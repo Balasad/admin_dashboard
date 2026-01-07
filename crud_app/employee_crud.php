@@ -27,7 +27,7 @@ body {
 	min-height: 100vh;
 }
 .back-nav {
-	padding: 20px 30px;
+	padding: 15px 20px;
 	background: white;
 	margin-bottom: 20px;
 	box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -43,27 +43,28 @@ body {
 	color: #764ba2;
 }
 .table-responsive {
-    margin: 30px 0;
+    margin: 20px 0;
+    overflow-x: auto;
 }
 .table-wrapper {
 	background: #fff;
 	padding: 20px 25px;
 	border-radius: 3px;
-	min-width: 1000px;
+	min-width: 800px;
 	box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 .table-title {        
 	padding-bottom: 15px;
 	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 	color: #fff;
-	padding: 16px 30px;
+	padding: 16px 20px;
 	min-width: 100%;
 	margin: -20px -25px 10px;
 	border-radius: 3px 3px 0 0;
 }
 .table-title h2 {
 	margin: 5px 0 0;
-	font-size: 24px;
+	font-size: 22px;
 }
 .table-title .btn-group {
 	float: right;
@@ -175,6 +176,205 @@ table.table td i {
 .swal2-popup { border-radius: 20px !important; }
 .swal2-confirm { border-radius: 10px !important; padding: 12px 30px !important; }
 .swal2-cancel { border-radius: 10px !important; padding: 12px 30px !important; }
+.hint-text {
+    font-size: 13px;
+    color: #999;
+    margin-top: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .container-xl {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .table-wrapper {
+        min-width: 700px;
+    }
+    .table-title h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .back-nav {
+        padding: 12px 15px;
+    }
+    .back-nav a {
+        font-size: 14px;
+    }
+    
+    .container-xl {
+        padding: 0 10px;
+    }
+    
+    .table-responsive {
+        margin: 15px 0;
+    }
+    
+    .table-wrapper {
+        padding: 15px;
+        min-width: 650px;
+    }
+    
+    .table-title {
+        padding: 12px 15px;
+        margin: -15px -15px 10px;
+        flex-wrap: wrap;
+    }
+    
+    .table-title h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .table-title .row {
+        width: 100%;
+    }
+    
+    .table-title .col-sm-6 {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+    
+    .table-title .btn {
+        float: none;
+        margin: 5px auto;
+        display: inline-block;
+    }
+    
+    table.table {
+        font-size: 12px;
+    }
+    
+    table.table tr th, 
+    table.table tr td {
+        padding: 10px 8px;
+    }
+    
+    table.table td i {
+        font-size: 18px;
+    }
+    
+    table.table td:last-child i {
+        font-size: 20px;
+        margin: 0 3px;
+    }
+    
+    .hint-text {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .back-nav {
+        padding: 10px;
+    }
+    
+    .back-nav a {
+        font-size: 13px;
+    }
+    
+    .table-wrapper {
+        padding: 10px;
+        min-width: 600px;
+        border-radius: 0;
+    }
+    
+    .table-title {
+        padding: 10px;
+        margin: -10px -10px 10px;
+    }
+    
+    .table-title h2 {
+        font-size: 16px;
+    }
+    
+    .table-title .btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    
+    .table-title .btn i {
+        font-size: 18px;
+        margin-right: 3px;
+    }
+    
+    .table-title .btn span {
+        font-size: 11px;
+    }
+    
+    table.table {
+        font-size: 11px;
+    }
+    
+    table.table tr th, 
+    table.table tr td {
+        padding: 8px 6px;
+    }
+    
+    table.table td i {
+        font-size: 16px;
+    }
+    
+    table.table td:last-child i {
+        font-size: 18px;
+    }
+    
+    .modal-dialog {
+        margin: 10px;
+    }
+    
+    .modal .modal-header, 
+    .modal .modal-body, 
+    .modal .modal-footer {
+        padding: 15px 20px;
+    }
+    
+    .modal .modal-title {
+        font-size: 18px;
+    }
+    
+    .modal .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .modal .btn {
+        min-width: 80px;
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px) {
+    .table-wrapper {
+        min-width: 550px;
+    }
+    
+    .table-title h2 {
+        font-size: 14px;
+    }
+    
+    .table-title .btn span {
+        display: none;
+    }
+    
+    .table-title .btn i {
+        margin-right: 0;
+    }
+    
+    table.table {
+        font-size: 10px;
+    }
+    
+    table.table tr th, 
+    table.table tr td {
+        padding: 6px 4px;
+    }
+}
 </style>
 </head>
 <body>
@@ -385,7 +585,7 @@ $(document).ready(function(){
         window.history.replaceState({}, document.title, window.location.pathname);
     }
     
-    if (urlParams.get('error')) {
+    if (urlParams.get('error') {
         Swal.fire({
             icon: 'error',
             title: 'Error!',
